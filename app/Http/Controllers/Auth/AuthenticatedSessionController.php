@@ -37,8 +37,12 @@ class AuthenticatedSessionController extends Controller
 
         Cart::moveCartItemsIntoDb();
 
-        return redirect()->intended(RouteServiceProvider::HOME);
+        return redirect()->intended(RouteServiceProvider::LOGINHOME);
     }
+
+
+
+
 
     /**
      * Destroy an authenticated session.
